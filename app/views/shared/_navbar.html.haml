@@ -1,0 +1,15 @@
+.navar.navbar-inverse.navbar-fixed-top.headroom
+  .container
+    .navbar-header
+      %button.navbar-toggle{:"data-toggle" => "collapse", :"data-target" =>".navbar-collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => url_for(root_path)}
+        %img{:src => "images/logo.png", :alt => "Ecuador Solidario"}
+
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav.pull-right
+        %li.active
+          %a{:href => url_for(root_path)} Inicio
+

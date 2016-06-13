@@ -1,0 +1,25 @@
+{
+  "name": "ecuadorsolidario",
+  "homepage": "https://github.com/deromero/ecuadorsolidario",
+  "authors": [
+    "Javier Romero <deromero@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "headroom.js": "https://npmcdn.com/headroom.js/bower.zip"
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3"
+  }
+}

@@ -2,10 +2,13 @@
 %html
 %head
   %title Ecuador Solidario | Plataforma de Financiamiento Colectivo
+  %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+  %link{:href => "https://fonts.googleapis.com/css?family=Raleway:200,400,600|Open+Sans:300,400,700", :rel => "stylesheet"}
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
   = csrf_meta_tags
-%body.container
-  %p.notice= notice
-  %p.alert= alert
+%body
+  = render "shared/navbar"
   = yield
+  = render "shared/social"
+  = render "shared/footer"
   = javascript_include_tag 'application', 'data-turbolinks-track' => true

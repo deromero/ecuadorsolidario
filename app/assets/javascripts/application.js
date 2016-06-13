@@ -12,7 +12,26 @@
 //
 //= require jquery
 //= require jquery_ujs
-////= require jquery
+//= require jquery
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require headroom.js/dist/headroom.min
+//= require headroom.js/dist/jQuery.headroom.min
 //= require_tree .
+
+$(document).ready(function(){
+  setupHeadroom();
+});
+
+
+var setupHeadroom = function(){
+  $(".headroom").headroom({
+      "tolerance": 20,
+      "offset": 50,
+      "classes": {
+        "initial": "animated",
+        "pinned": "slideDown",
+        "unpinned": "slideUp"
+      }
+    });
+}
