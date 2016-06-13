@@ -8,6 +8,8 @@
   = csrf_meta_tags
 %body
   = render "shared/navbar"
+  %p.notice = notice
+  %p.alert = alert
   = yield
   = render "shared/social"
   = render "shared/footer"
