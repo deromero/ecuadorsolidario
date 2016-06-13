@@ -10,15 +10,17 @@
 
     .navbar-collapse.collapse
       %ul.nav.navbar-nav.pull-right
-        %li.active
+        %li{class: active_class(root_path)}
           %a{:href => url_for(root_path)} Inicio
+        %li{class: active_class(projects_index_url)}
+          %a{:href => url_for(projects_index_url)} Proyectos
         - if user_signed_in?
-          %li
+          %li{class: active_class(projects_new_url)}
             %a.btn{:href => url_for(projects_new_url)} Nuevo Proyecto
           %li
             = link_to "Salir", destroy_user_session_path, method: :delete, class: "btn"
         - else
-          %li
+          %li{class: active_class(new_user_session_path)}
             %a.btn{:href => url_for(new_user_session_path)} Ingresar
 
 
