@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   get 'projects/index'
+  get 'projects/new'
 
   get 'home/index'
   root 'home#index'
