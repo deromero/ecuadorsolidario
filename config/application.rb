@@ -25,6 +25,10 @@ module Ecuadorsolidario
     config.generators do |g|
         g.template_engine :haml
     end
+
     config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
+
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.default_locale = :es
   end
 end

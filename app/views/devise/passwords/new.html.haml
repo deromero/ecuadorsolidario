@@ -2,7 +2,7 @@
   .row
   %article.col-xs-12.maincontent
     %header.page-header
-      %h1.page-title Registro
+      %h1.page-title= t('.forgot_your_password')
 
     .col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2
       .panel.panel-default
@@ -12,5 +12,5 @@
             .form-inputs
               = f.input :email, required: true, autofocus: true
             .form-actions
-              = f.button :submit, "Send me reset password instructions"
+              = f.button :submit, t('.send_me_reset_password_instructions')
           = render "devise/shared/links"

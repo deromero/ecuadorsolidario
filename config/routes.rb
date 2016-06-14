@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'projects/index'
-  get 'projects/new'
 
-  get 'home/index'
+  scope "(:locale)", locale: /en|es/ do
+    resources :categories
+    resources :projects
+    devise_for :users
+  end
+
+
+  get '/:locale' => 'home#index'
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -3,6 +3,13 @@
     .container
       .row
         .col-md-3.widget
+          %h3.widget-title Idioma
+          .widget-body
+            %p
+              = link_to_unless I18n.locale == :en, "English", locale: :en
+              |
+              = link_to_unless I18n.locale == :es, "Español", locale: :es
+
           %h3.widget-title Contacto
           .widget-body
             %p
@@ -14,7 +21,7 @@
               Av. 9 de Octubre y la Otra, Guayaquil, Ecuador
 
         .col-md-3.widget
-          %h3.widget-title Contacto
+          %h3.widget-title Redes Sociales
           .widget-body
             %p.follow-me-icons
               %a
