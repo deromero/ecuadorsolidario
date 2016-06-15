@@ -1,7 +1,9 @@
 class ProjectsController < ApplicationController
   before_action :find_project, only: [:show, :edit, :update, :destroy]
+  layout "start", only: [:index]
 
   def index
+    layout = "start"
     @categories = Category.all.order("title ASC")
     @projects = Project.all.order("created_at DESC")
 
