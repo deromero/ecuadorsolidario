@@ -1,25 +1,23 @@
-.jumbotron.top-space
+.jumbotron
   .container
-    %h3.text-center.thin Reasons to use this template
-    .row
-      .col-md-3.col-sm-6.highlight
-        .h-caption
-          %h4
-            %i.fa.fa-cogs.fa-5
-            Bootstrap-powered
-      .col-md-3.col-sm-6.highlight
-        .h-caption
-          %h4
-            %i.fa.fa-cogs.fa-5
-            Bootstrap-powered
-      .col-md-3.col-sm-6.highlight
-        .h-caption
-          %h4
-            %i.fa.fa-cogs.fa-5
-            Bootstrap-powered
-      .col-md-3.col-sm-6.highlight
-        .h-caption
-          %h4
-            %i.fa.fa-cogs.fa-5
-            Bootstrap-powered
+    %h3.text-center.title
+      = t('highlight.title')
+      %br
+      %small= t('highlight.small')
+    .row.topspace-2x
+      %figure.col-md-4.col-sm-6.bottomspace-xs.text-center
+        %i.fa.fa-users.fa-4x.color-accent
+        %h4= t('highlight.users_count')
+        %p.text-center= t('highlight.users_desc')
+
+      %figure.col-md-4.col-sm-6.bottomspace-xs.text-center
+        %i.fa.fa-usd.fa-4x.color-accent
+        %h4= t('highlight.usd_count')
+        %p.text-center= t('highlight.usd_desc')
+
+      %figure.col-md-4.col-sm-6.bottomspace-xs.text-center
+        %i.fa.fa-heartbeat.fa-4x.color-accent
+        %h4= t('highlight.casualties_count')
+        %p.text-center= t('highlight.casualties_desc')
+
 

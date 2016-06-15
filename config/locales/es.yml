@@ -11,3 +11,21 @@ es:
         unlock_token: Desbloquear token
     models:
       user: Usuario
+  menu:
+    home: Inicio
+    explore: Proyectos
+    sign_in_sign_up: Ingreso / Registro
+    sign_out: Salir
+    user_profile: Mis Datos / Perfil
+    new_project: Nuevo Proyecto
+  site:
+    head_title: Ecuador Solidario | Plataforma de Financiamiento Colectivo
+    title: Ecuador Solidario
+    title_caps: ECUADOR SOLIDARIO
+    tagline: Ecuador Solidario busca remediar los daños causados por el terremoto de 7.8, construyendo
+             una plataforma de crowdonations de bienes y servicios.
+  footer:
+    third_column:
+      title: Con el apoyo de
+      content: Un reto del BANCO DE IDEAS
+

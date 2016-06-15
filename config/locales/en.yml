@@ -11,3 +11,6 @@ en:
         unlock_token: Unlock token
     models:
       user: User
+  site:
+    title: Ecuador Solidario
+    title_caps: ECUADOR SOLIDARIO

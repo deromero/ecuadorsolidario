@@ -1,0 +1,49 @@
+es:
+  header:
+    button_more_info: MÀS INFORMACIÓN
+    button_new_project: INGRESA TU CASO
+  highlight:
+    title: Razones para ser solidarios
+    small: Estamos contruyendo una plataforma de crowdonations de bienes y servicios
+    users_count: 29000
+    users_desc: Personas sin hogar
+    usd_count: 3000
+    usd_desc: Millones en pérdidas
+    casualties_count: 600
+    casualties_desc: Fallecidos
+  testimonials:
+    title: ¿Qué dicen los voluntarios y beneficiarios de nosotros?
+    article_1:
+      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laboriosam deserunt accusamus soluta maiores alias, aliquid
+            ipsum nobis laudantium qui, eos architecto accusantium
+            doloremque dolorem quia asperiores voluptate pariatur.
+            Laboriosam, ullam.
+      author: Usuario 1
+      author_title: Voluntario, USA
+    article_2:
+      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laboriosam deserunt accusamus soluta maiores alias, aliquid
+            ipsum nobis laudantium qui, eos architecto accusantium
+            doloremque dolorem quia asperiores voluptate pariatur.
+            Laboriosam, ullam.
+      author: Usuario 2
+      author_title: Beneficiario, Jama, Manabí
+    article_3:
+      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laboriosam deserunt accusamus soluta maiores alias, aliquid
+            ipsum nobis laudantium qui, eos architecto accusantium
+            doloremque dolorem quia asperiores voluptate pariatur.
+            Laboriosam, ullam.
+      author: Usuario 3
+      author_title: Voluntario, Chile
+  get_started:
+    title: Empiece ahora
+    desc: ¡Empiece a ayudar ahora, revisando nuestros proyectos!
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laboriosam deserunt accusamus soluta maiores alias, aliquid
+            ipsum nobis laudantium qui, eos architecto accusantium
+            doloremque dolorem quia asperiores voluptate pariatur.
+            Laboriosam, ullam.
+    button_send_project: Envíe su proyecto.
+    button_explore: Revise el directorio
