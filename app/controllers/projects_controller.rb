@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :find_project, only: [:show, :edit, :update, :destroy]
-  layout "start", only: [:index]
+  layout "explore", only: [:index]
 
   def index
     layout = "start"

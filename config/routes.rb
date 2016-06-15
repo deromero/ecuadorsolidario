@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   end
 
 
+  get '(/:locale)/start' => 'home#start', :as => :start
   get '/:locale' => 'home#index'
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -11,8 +11,8 @@
 
     .navbar-collapse.collapse
       %ul.nav.navbar-nav.pull-right
-        %li{class: active_class(root_path)}
-          %a{:href => url_for(root_path)}= t('menu.home')
+        %li{class: active_class(start_url)}
+          %a{:href => url_for(start_url)}= t('menu.start_project')
         %li{class: active_class(projects_url)}
           %a{:href => url_for(projects_url)}= t('menu.explore')
 
