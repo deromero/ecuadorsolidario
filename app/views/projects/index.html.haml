@@ -1,13 +1,4 @@
-%header#head.inner
-  .container
-    .row
-      %h1.lead Explore los casos de nuestra comunidad
-      .row
-        - @categories.each do |cat|
-          .col-md-2.col-lg-2.col-sm-6.col-xs-6
-            %a{:href => "#",:class => "w-inline-bock btn-category"}
-              %div
-                =cat.title
+=render "start"
 
 .container
   %article.col-xs-12.maincontent
