@@ -22,6 +22,7 @@
 
 $(document).ready(function(){
   setupHeadroom();
+  showStartProjectForm();
 });
 
 
@@ -35,6 +36,13 @@ var setupHeadroom = function(){
         "unpinned": "slideUp"
       }
     });
+
+var showStartProjectForm = function(){
+  $('.hstart-button').on("click", function(){
+    event.preventDefault();
+
+  });
+}
 
 $(window).scroll(function(){
   if ($(this).scrollTop() >  140 ){

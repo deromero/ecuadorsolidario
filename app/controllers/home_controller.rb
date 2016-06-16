@@ -6,6 +6,8 @@ class HomeController < ApplicationController
   end
 
   def start
+    @project = Project.new
+    @categories = Category.all
   end
 
 end

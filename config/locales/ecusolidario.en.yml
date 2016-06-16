@@ -1,0 +1,16 @@
+en:
+  activerecord:
+    attributes:
+      user:
+        current_password: Current password
+        email: Email
+        password: Password
+        password_confirmation: Password confirmation
+        remember_me: Remember me
+        reset_password_token: Reset password token
+        unlock_token: Unlock token
+    models:
+      user: User
+  site:
+    title: Ecuador Solidario
+    title_caps: ECUADOR SOLIDARIO

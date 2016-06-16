@@ -1,6 +1,7 @@
 class ProjectsController < ApplicationController
-  before_action :find_project, only: [:show, :edit, :update, :destroy]
   layout "explore", only: [:index]
+  #before_action :verify_authorized, except: %i[show index]
+  before_action :find_project, only: [:show, :edit, :update, :destroy]
 
   def index
     layout = "start"
@@ -13,7 +14,8 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = Project.new
+    @project = Project.new user: current_user
+    #authorize @project
   end
 
   def create
