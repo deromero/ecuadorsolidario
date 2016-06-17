@@ -13,12 +13,12 @@ es:
       user: Usuario
   menu:
     home: Inicio
-    start_project: Comience su proyecto
-    explore: Proyectos
+    start_project: Envíe su caso
+    explore: Explorar
     sign_in_sign_up: Ingreso / Registro
     sign_out: Salir
     user_profile: Mis Datos / Perfil
-    new_project: Nuevo Proyecto
+    new_project: Nuevo Caso
   site:
     head_title: Ecuador Solidario | Plataforma de Financiamiento Colectivo
     title: Ecuador Solidario

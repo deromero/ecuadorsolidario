@@ -3,7 +3,7 @@
     .row
       %h1.page-title.text-center= t('header')
       %h2.page-lead.text-center= t('subtitle')
-      .row.text-center.topspace
+      .row.text-center.topspace#category-list
         - @categories.each do |cat|
           .col-md-2.col-lg-2.col-sm-6.col-xs-6
             %a{:href => "#",:class => "w-inline-bock btn-category"}

@@ -18,7 +18,12 @@
 //= require headroom.js/dist/headroom.min
 //= require headroom.js/dist/jQuery.headroom.min
 //= require bootstrap-hover-dropdown/bootstrap-hover-dropdown.min
+//= require js-routes
+//= require i18n
+//= require i18n.js
+//= require i18n/translations
 //= require_tree .
+
 
 $(document).ready(function(){
   setupHeadroom();
@@ -36,13 +41,18 @@ var setupHeadroom = function(){
         "unpinned": "slideUp"
       }
     });
+};
 
 var showStartProjectForm = function(){
   $('.hstart-button').on("click", function(){
     event.preventDefault();
 
   });
-}
+};
+
+var getJsonRoute = function(route){
+  return '/'+I18n.currentLocale() + route + '.json';
+};
 
 $(window).scroll(function(){
   if ($(this).scrollTop() >  140 ){
@@ -53,4 +63,10 @@ $(window).scroll(function(){
     $('.navbar-dual').addClass("navbar-inverse");
   }
 });
-}
+
+
+
+jQuery.extend(window, Routes);
+
+
+

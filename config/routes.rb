@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
   scope "(:locale)", locale: /en|es/ do
+
     resources :categories
     resources :projects
     devise_for :users
     resources :users
+
   end
+
 
 
   get '(/:locale)/start' => 'home#start', :as => :start

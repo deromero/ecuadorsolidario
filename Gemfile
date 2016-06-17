@@ -15,6 +15,8 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'pundit'
+gem 'js-routes'
+gem "i18n-js", ">= 3.0.0.rc11"
 
 group :development, :test do
   gem 'byebug'
