@@ -22,7 +22,9 @@
 //= require i18n
 //= require i18n.js
 //= require i18n/translations
+//= require handlebars/handlebars.runtime
 //= require_tree .
+//= require_tree ./templates
 
 
 $(document).ready(function(){

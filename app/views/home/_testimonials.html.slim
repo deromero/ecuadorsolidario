@@ -1,0 +1,48 @@
+section.section-testimonials.jumbotron
+  .container
+
+    h2.title.text-center.topspace= t('testimonials.title')
+    #testimonials-carousel.carousel.slide data-ride="carousel" 
+
+      ol.carousel-indicators
+        li.active data-target="#testimonials-carousel" data-slide-to="0" 
+        li data-target="#testimonials-carousel" data-slide-to="1" 
+        li data-target="#testimonials-carousel" data-slide-to="2" 
+
+      .carousel-inner
+
+        .row.item.active
+          .col-sm-3.profile
+            img src="/images/people/1.jpg" alt="" 
+          .col-sm-9.content
+            blockquote
+              i.fa.fa-quote-left
+              p= t('testimonials.article_1.text')
+            source
+              = t('testimonials.article_1.author')
+              br
+              span.title= t('testimonials.article_1.author_title')
+
+        .row.item
+          .col-sm-3.profile
+            img src="/images/people/2.jpg" alt="" 
+          .col-sm-9.content
+            blockquote
+              i.fa.fa-quote-left
+              p= t('testimonials.article_2.text')
+            source
+              = t('testimonials.article_2.author')
+              br
+              span.title= t('testimonials.article_2.author_title')
+
+        .row.item
+          .col-sm-3.profile
+            img src="/images/people/3.jpg" alt="" 
+          .col-sm-9.content
+            blockquote
+              i.fa.fa-quote-left
+              p= t('testimonials.article_3.text')
+            source
+              = t('testimonials.article_3.author')
+              br
+              span.title= t('testimonials.article_3.author_title')

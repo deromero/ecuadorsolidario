@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
@@ -10,13 +11,16 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'haml', '~> 4.0', '>= 4.0.7'
-gem 'haml-rails', '~> 0.9.0'
+gem 'slim'
+gem 'slim-rails'
+gem 'haml2slim'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'pundit'
 gem 'js-routes'
 gem "i18n-js", ">= 3.0.0.rc11"
+gem 'handlebars_assets'
+
 
 group :development, :test do
   gem 'byebug'

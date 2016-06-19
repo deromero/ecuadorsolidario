@@ -5,9 +5,6 @@ class ProjectsController < ApplicationController
 
   def index
     layout = "start"
-    @categories = Category.all.order("title ASC")
-    @projects = Project.all.order("created_at DESC")
-
   end
 
   def show

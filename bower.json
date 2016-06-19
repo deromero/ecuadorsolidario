@@ -18,7 +18,8 @@
   ],
   "dependencies": {
     "headroom.js": "https://npmcdn.com/headroom.js/bower.zip",
-    "bootstrap-hover-dropdown": "^2.2.1"
+    "bootstrap-hover-dropdown": "^2.2.1",
+    "handlebars": "^4.0.5"
   },
   "devDependencies": {
     "html5shiv": "^3.7.3"

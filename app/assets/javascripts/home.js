@@ -1,6 +1,6 @@
 $(document).ready(function(){
   if($('#category-list').length){
-    load_categories();
+    load_categories($('#category-list'));
     //cargar categorias
 
 
@@ -8,10 +8,10 @@ $(document).ready(function(){
 });
 
 
-var load_categories = function(){
+var load_categories = function($elem){
   var url = getJsonRoute(Routes.categories_path());
   $.get(url,{})
       .done(function(response){
-        alert("data loaded");
+        $elem.html(JST['categories/index'](response));
       });
 }
